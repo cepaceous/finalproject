@@ -1,8 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Aleo|Beth+Ellen&display=swap');
 
 
+/* Nav */
+
+.navbar {
+    background-color: black;
+}
 
 .social {
+    color: dimgray;
     padding-top: 12px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.fab:hover {
+    color: white;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+    background-color: white;
+    padding-top: 250px;
+    height: 1000px;
+    animation: colorchange 10s infinite;
+}
+
+@keyframes colorchange {
+  0%   {background: lightcyan;}
+  25%  {background: lightskyblue;}
+  50%  {background: lightpink;}
+  75%  {background: lightgoldenrodyellow;}
+  100% {background: lightcyan;}
+}
+
+/* About */
+
+#intro {
+    background-color: white;
+    color: black;
+    height: 900px;
+    padding-top: 150px;
+}
+
+#overlay {
+    z-index: 10;
+    color: black;
+}
+
+#about_name {
+    padding-top: 35px;
+    font-family: 'Beth Ellen', cursive;
+    font-size: 195px;
+    z-index: -20;
+    position: absolute;
+    color: lightslategray;
+}
+
+#about_text {
+    font-family: 'Aleo', serif;
+    padding-top: 50px;
+}
+
+/* Parallax */
+
+.parallax {
+    background-image: url("../img/paral.png");
+    height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Projects */
+
+h1 {
+    font-family: 'Beth Ellen', cursive;
+}
+
+.gallery {
+    width: 500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Parallax2 */
+
+.parallax2 {
+  background-image: url("../img/para.jpg");
+  height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* CV */
+
+#CV {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Parallax3 */
+
+.parallax3 {
+  background-image: url("../img/29.png");
+  height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Contact */
+
+#contact {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    font-family: 'Beth Ellen', cursive;
+  }
+
+  label {
+    font-family: 'Aleo', serif;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    font-family: 'Aleo', serif;
+    border: 1px solid lightgray;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: lightgray;
+    color: black;
+    font-family: 'Aleo', serif;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: lightgray;
+  }
+  
+  .cform {
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* Footer */
+
+.footer {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
+    color: white;
+    font-family: 'Aleo', serif;
 }
